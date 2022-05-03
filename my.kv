@@ -1,5 +1,17 @@
 #:kivy 1.0.9
 
+<MainBody>:
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<RightTop>:
+    height: self.size[1]
+    text_size: self.width, None
+
 
 
 
